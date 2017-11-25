@@ -20,7 +20,7 @@ void *cauta(void *arg)
 			int j=0;
 			while((v[i]>x[j])&&(j<n_x))
 				j++;
-pthread_mutex_lock(&m);
+			pthread_mutex_lock(&m);
 			int k;
 			n_x++;			
 			for(k=n_x;k>j;k--)
